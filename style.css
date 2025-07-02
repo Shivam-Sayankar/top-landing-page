@@ -1,0 +1,233 @@
+* {
+  /* box-sizing: border-box; */
+}
+
+body {
+  /* background-color: #212121; */
+  /* color: white; */
+  background-color: white;
+  margin: 0;
+  font-family: "Roboto";
+}
+
+/* Header */
+header {
+  display: flex;
+  height: 80px;
+  justify-content: space-around;
+  background-color: #1f2937;
+}
+
+div.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.header-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+li {
+  justify-content: center;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: #1f2937;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.hero-container {
+  display: flex;
+  width: 70%;
+  /* padding: 50px; */
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-text {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero-signup-btn {
+  background-color: #3882f6;
+  color: #f9faf8;
+  border: none;
+  padding: 8px 26px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-image {
+  width: 950px;
+  height: 220px;
+  background-color: gray;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* info section */
+.info-section {
+  height: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: center; */
+  gap: 50px;
+  margin-bottom: 30px;
+}
+
+.info-heading {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+.cards-container {
+  display: flex;
+  gap: 70px;
+  /* margin: 100px 0 100px 0; */
+  /* margin-bottom: 50px; */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+  gap: 10px;
+  width: 200px;
+}
+
+.card-img-placeholder {
+  height: 200px;
+  width: 200px;
+  border: #3882f6 5px solid;
+  border-radius: 20px;
+}
+
+/* quote section */
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: #e5e7eb;
+}
+
+.quote-container {
+  width: 46%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.quote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote-author {
+  font-size: 18px;
+  /* font-style: bold; */
+  font-weight: 600;
+  text-align: right;
+}
+
+/* sign up reminder section */
+.signup-reminder-section {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-reminder-container {
+  width: 60%;
+  background-color: #3882f6;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  padding: 40px 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-reminder-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  height: 50px;
+}
+
+.signup-reminder-btn {
+  width: 120px;
+  background-color: #3882f6;
+  border: white 3px solid;
+  border-radius: 10px;
+  color: white;
+  padding: 8px 20px;
+  height: 40px;
+  font-weight: 1000;
+}
+
+.signup-reminder-heading {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.signup-reminder-para {
+  color: #e5e7eb;
+  margin: 0;
+}
+
+/* footer */
+footer {
+  background-color: #1f2937;
+  color: #e5e7eb;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
