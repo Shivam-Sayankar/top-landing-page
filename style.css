@@ -1,13 +1,9 @@
-* {
-  /* box-sizing: border-box; */
-}
-
 body {
-  /* background-color: #212121; */
-  /* color: white; */
   background-color: white;
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 /* Header */
@@ -16,6 +12,7 @@ header {
   height: 80px;
   justify-content: space-around;
   background-color: #1f2937;
+  background-color: rgb(235, 228, 248);
 }
 
 div.logo {
@@ -23,8 +20,12 @@ div.logo {
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  color: #f9faf8;
+  color: #3f27a1;
   font-weight: bold;
+}
+
+#logo-gif {
+  width: 50px;
 }
 
 .header-links {
@@ -32,9 +33,9 @@ div.logo {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 16px;
-  font-size: 18px;
-  color: #e5e7eb;
+  gap: 26px;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 li {
@@ -42,15 +43,32 @@ li {
   align-content: center;
 }
 
-a {
+ul li a {
   text-decoration: none;
-  color: white;
+  color: #22134ab0;
+}
+
+.header-signup-btn {
+  background-color: #bab7ff;
+  color: #1f2937;
+  border: none;
+  padding: 8px 26px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-signup-btn:hover {
+  background-color: #3f27a1;
+  color: #f9faf8;
+  transform: scale(1.05);
 }
 
 /* Hero section */
 .hero-section {
-  background-color: #1f2937;
-  height: 450px;
+  background-color: #bab7ff;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,88 +78,137 @@ a {
 .hero-container {
   display: flex;
   width: 70%;
-  /* padding: 50px; */
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5px;
 }
 
 .hero-text {
-  font-size: 48px;
-  color: #f9faf8;
+  font-size: 60px;
+  color: #22134a;
   font-weight: 900;
 }
 
 .hero-description {
-  font-size: 18px;
-  color: #e5e7eb;
+  font-size: 23px;
+  font-weight: 500;
+  color: #1f2937;
+  color: #22134ab0;
 }
 
-.hero-signup-btn {
-  background-color: #3882f6;
-  color: #f9faf8;
-  border: none;
-  padding: 8px 26px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.hero-image {
-  width: 950px;
-  height: 220px;
-  background-color: gray;
-  color: white;
+.hero-image-area {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+img#hero-image {
+  width: 650px;
 }
 
 /* info section */
 .info-section {
-  height: 420px;
+  height: 650px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 120px;
 }
 
 .info-container {
   display: flex;
   flex-direction: column;
   text-align: center;
-  /* justify-content: center; */
   gap: 50px;
   margin-bottom: 30px;
 }
 
+.info-section-hr {
+  width: 40%;
+  /* width: 300px; */
+  height: 1px;
+  border: none;
+  background-color: #300c8a;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .info-heading {
-  font-size: 36px;
-  font-weight: 900;
-  color: #1f2937;
+  font-size: 40px;
+  font-weight: 700;
+  color: #22134a;
+}
+
+.info-sub-heading {
+  font-size: 32px;
+  font-weight: 500;
+  color: #22134ab0;
+  margin-bottom: 20px;
 }
 
 .cards-container {
   display: flex;
-  gap: 70px;
-  /* margin: 100px 0 100px 0; */
-  /* margin-bottom: 50px; */
+  gap: 120px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  color: gray;
-  gap: 10px;
-  width: 200px;
+  gap: 25px;
+  width: 250px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #22134a;
+}
+
+.card-description {
+  font-size: 20px;
+  font-weight: 500;
+  color: #22134ab0;
 }
 
 .card-img-placeholder {
-  height: 200px;
-  width: 200px;
-  border: #3882f6 5px solid;
+  height: 250px;
+  width: 250px;
+  border: #6d37d0 5px solid;
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+#clicky-switch-box:hover {
+  border: #35afd1 5px solid;
+  border-radius: 30px;
+  transform: scale(1.06);
+  box-shadow: 0px 10px 50px #35afd186;
+}
+
+#linear-switch-box:hover {
+  border: #ad2726 5px solid;
+  border-radius: 30px;
+  transform: scale(1.06);
+  box-shadow: 0px 10px 50px #ad262686;
+}
+
+#tactile-switch-box:hover {
+  border: #94614e 5px solid;
+  border-radius: 30px;
+  transform: scale(1.06);
+  box-shadow: 0px 10px 50px #94614e98;
+}
+
+#hall-effect-switch-box:hover {
+  border: #82b596 5px solid;
+  border-radius: 30px;
+  transform: scale(1.06);
+  box-shadow: 0px 10px 50px #82b596bd;
+}
+
+.switch-images {
+  width: 250px;
 }
 
 /* quote section */
@@ -149,8 +216,13 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  background-color: #e5e7eb;
+  height: 410px;
+  background-color: #ebe4f8;
+  background-image: url("./images/hipyo-logo.png");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 14px;
+  background-blend-mode: overlay;
 }
 
 .quote-container {
@@ -160,18 +232,24 @@ a {
   gap: 10px;
 }
 
-.quote {
+.quote a {
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 400;
   font-style: italic;
   color: #1f2937;
+  text-decoration: none;
 }
 
 .quote-author {
-  font-size: 18px;
-  /* font-style: bold; */
+  font-size: 24px;
+  color: #080513;
   font-weight: 600;
   text-align: right;
+}
+
+.quote-author a {
+  color: #080513;
+  text-decoration: none;
 }
 
 /* sign up reminder section */
@@ -183,9 +261,9 @@ a {
 }
 
 .signup-reminder-container {
-  width: 60%;
-  background-color: #3882f6;
-  color: white;
+  width: 52%;
+  background-color: #bab7ff;
+  color: #080513;
   border-radius: 10px;
   display: flex;
   padding: 40px 100px;
@@ -193,39 +271,74 @@ a {
   align-items: center;
 }
 
-.signup-reminder-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  height: 50px;
-}
-
 .signup-reminder-btn {
   width: 120px;
-  background-color: #3882f6;
-  border: white 3px solid;
+  background-color: #bab7ff;
+  border: #080513 2px solid;
   border-radius: 10px;
-  color: white;
+  color: #080513;
   padding: 8px 20px;
-  height: 40px;
-  font-weight: 1000;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+.signup-reminder-btn a {
+  text-decoration: none;
+  color: #080513;
+}
+
+.signup-reminder-btn:hover a {
+  text-decoration: none;
+  color: #080513;
+  color: #f4e5ff;
+}
+
+.signup-reminder-btn:hover {
+  transform: scale(1.05);
+  background-color: #3f27a1;
+  color: #f4e5ff;
+  border: 0;
 }
 
 .signup-reminder-heading {
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 25px;
+  font-weight: 800;
 }
 
 .signup-reminder-para {
-  color: #e5e7eb;
+  font-size: 20px;
+  font-weight: 500;
+  color: #080513;
   margin: 0;
+}
+
+.signup-reminder-para #glarses-text {
+  display: none;
+}
+
+.signup-reminder-container:hover .signup-reminder-para #glarses-text {
+  display: inline;
+}
+
+#glarses-text a {
+  color: #080513;
+}
+
+.signup-reminder-container:hover {
+  background-image: url("./images/bruh-glarses.png");
+  background-repeat: no-repeat;
+  background-size: 80px;
+  background-position-x: 99%;
+  background-position-y: bottom;
 }
 
 /* footer */
 footer {
   background-color: #1f2937;
-  color: #e5e7eb;
+  background-color: #22134a;
+  color: #ebe4f8;
   height: 70px;
   display: flex;
   justify-content: center;

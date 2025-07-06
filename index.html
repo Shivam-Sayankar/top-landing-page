@@ -3,55 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Switch Up Your Typing</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">Header Logo</div>
+        <div class="logo">
+                <img id="logo-gif" src="./images/keyboard.gif" alt="Howdie Hey!" draggable="false">
+                Howdy Hey!
+        </div>
         <ul class="header-links">
-            <li><a href="">header link one</a></li>
-            <li><a href="">header link one</a></li>
-            <li><a href="">header link three</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Switches</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li>
+                <button class="header-signup-btn">Sign up</button>      
+            </li>
         </ul>
     </header>
     <main>
         <div class="hero-section">
             <div class="hero-container">
                 <div class="hero-content">
-                    <span class="hero-text">This website is awesome</span>
-                    <p class="hero-description">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-                    <button class="hero-signup-btn">Sign up</button>      
+                    <span class="hero-text">Unlock Your Perfect Typing Experience!</span>
+                    <p class="hero-description">Elevate every keystroke. Discover how precision, feedback, and responsiveness from the right mechanical switches can transform your typing or gaming.</p>
                 </div>
-                <div class="hero-image">
-                    this is a placeholder for an image
+                <div class="hero-image-area">
+                    <!-- this is a placeholder for an image -->
+                     <img id="hero-image" src="images/purple-switch-opened-small.png" alt="a mechanical switch opened up" draggable="false">
                 </div>
             </div>
         </div>
 
         <div class="info-section">
             <div class="info-container">
-                <div class="info-heading">Some random information.</div>
+
+                <div class="info-heading">Switches</div>
+
+                <hr class="info-section-hr">
+
+                <div class="info-sub-heading">Explore the Four Core Types</div>
 
                 <div class="cards-container">
                     <div class="card">
-                        <div class="card-img-placeholder"></div>
-                        <div class="card-description">this is some subtext under an illustration or image</div>
+                        <div class="card-img-placeholder" id="clicky-switch-box">
+                            <img class="switch-images" src="./images/clicky-switch-transparent.png" alt="a clicky switch">
+                        </div>
+                        <div class="card-title">Clicky Switches</div>
+                        <div class="card-description">Experience the classic, satisfying 'click' sound and a distinct tactile bump with every press, offering audible and physical feedback.</div>
                     </div>
 
                     <div class="card">
-                        <div class="card-img-placeholder"></div>
-                        <div class="card-description">this is some subtext under an illustration or image</div>
+                        <div class="card-img-placeholder" id="linear-switch-box">
+                            <img class="switch-images" src="./images/linear-switch-transparent.png" alt="a linear switch">
+                        </div>
+                        <div class="card-title">Linear Switches</div>
+                        <div class="card-description">Enjoy a smooth, consistent keystroke from top to bottom, without any tactile bump or audible click, ideal for rapid presses.</div>
                     </div>
 
                     <div class="card">
-                        <div class="card-img-placeholder"></div>
-                        <div class="card-description">this is some subtext under an illustration or image</div>
+                        <div class="card-img-placeholder"  id="tactile-switch-box">
+                            <img class="switch-images" src="./images/tactile-switch-transparent.png" alt="a tactile switch">
+                        </div>
+                        <div class="card-title">Tactile Switches</div>
+                        <div class="card-description">Feel a noticeable bump during actuation, providing feedback without the loud 'click,' perfect for typing accuracy and silent gaming</div>
                     </div>
 
                     <div class="card">
-                        <div class="card-img-placeholder"></div>
-                        <div class="card-description">this is some subtext under an illustration or image</div>
+                        <div class="card-img-placeholder"  id="hall-effect-switch-box">
+                            <img class="switch-images" src="./images/hall-effect-switch-transparent.png" alt="a hall effect switch">
+
+                        </div>
+                        <div class="card-title">Hall Effect Switches</div>
+                        <div class="card-description">Magnetic sensing offers extreme precision, durability, and often adjustable actuation, redefining speed and control.</div>
                     </div>
                 </div>
             </div>
@@ -60,10 +89,18 @@
         <div class="quote-section">
             <div class="quote-container">
                 <div class="quote">
-                    This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice
+                    <a href="https://youtu.be/6d55MYQuX18?t=111" target="_blank">
+                    &ldquo; You at home are probably wondering <br>
+                    'how do you even build your first keyboard?'<br>
+                    'how do you make it sound like heaven?'<br>
+                    Well, first, you have to know what kind of 
+                    keyboard sound you like &rdquo;
+                    </a>
                 </div>
                 <div class="quote-author">
-                    -Thor, God of Thunder
+                    <a href="https://www.youtube.com/@HipyoTech" target="_blank">
+                        - Hipyo Tech
+                    </a>
                 </div>
             </div>
         </div>
@@ -72,9 +109,9 @@
             <div class="signup-reminder-container">
                 <div class="signup-reminder-text">
                     <span class="signup-reminder-heading">Call to action! It's time!</span>
-                    <p class="signup-reminder-para">Sign up for our product by clicking that button right over there!</p>
+                    <p class="signup-reminder-para">Sign up for our product <span id="glarses-text"><a href="https://www.youtube.com/watch?v=OL9oJrSqHEE" target="_blank">Cherry MX Purple</a></span> by clicking that button right over there!</p>
                 </div>
-                <button class="signup-reminder-btn">Sign up</button>
+                <button class="signup-reminder-btn"><a href="https://www.youtube.com/@Glarses" target="_blank">Sign up</a></button>
             </div>
         </div>
     </main>
