@@ -11,7 +11,6 @@ header {
   display: flex;
   height: 80px;
   justify-content: space-around;
-  background-color: #1f2937;
   background-color: rgb(235, 228, 248);
 }
 
@@ -92,7 +91,6 @@ ul li a {
 .hero-description {
   font-size: 23px;
   font-weight: 500;
-  color: #1f2937;
   color: #22134ab0;
 }
 
@@ -291,7 +289,6 @@ img#hero-image {
 
 .signup-reminder-btn:hover a {
   text-decoration: none;
-  color: #080513;
   color: #f4e5ff;
 }
 
@@ -336,7 +333,6 @@ img#hero-image {
 
 /* footer */
 footer {
-  background-color: #1f2937;
   background-color: #22134a;
   color: #ebe4f8;
   height: 70px;
