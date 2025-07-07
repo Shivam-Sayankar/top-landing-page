@@ -67,11 +67,12 @@ ul li a {
 /* Hero section */
 .hero-section {
   background-color: #bab7ff;
-  height: 500px;
+  max-height: 500px;
+  flex: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 60px;
 }
 
 .hero-container {
@@ -101,16 +102,16 @@ ul li a {
 }
 
 img#hero-image {
-  width: 650px;
+  width: 670px;
 }
 
 /* info section */
 .info-section {
-  height: 650px;
+  /* height: 650px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 120px;
+  padding: 60px;
 }
 
 .info-container {
@@ -147,6 +148,9 @@ img#hero-image {
 .cards-container {
   display: flex;
   gap: 120px;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 60px;
 }
 
 .card {
@@ -214,13 +218,14 @@ img#hero-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 410px;
+  min-height: 410px;
   background-color: #ebe4f8;
   background-image: url("./images/hipyo-logo.png");
   background-repeat: no-repeat;
   background-position-x: 90%;
-  background-position-y: 14px;
+  background-position-y: 50%;
   background-blend-mode: overlay;
+  padding: 50px;
 }
 
 .quote-container {
@@ -266,11 +271,12 @@ img#hero-image {
   display: flex;
   padding: 40px 100px;
   justify-content: space-between;
+  gap: 20px;
   align-items: center;
 }
 
 .signup-reminder-btn {
-  width: 120px;
+  min-width: 120px;
   background-color: #bab7ff;
   border: #080513 2px solid;
   border-radius: 10px;
